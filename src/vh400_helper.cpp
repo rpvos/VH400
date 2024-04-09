@@ -1,6 +1,6 @@
 #include "vh400_helper.hpp"
 
-constexpr float Vh400Helper::CalculateVwc(const uint16_t &value, const float &operating_voltage, const int &adc_bits)
+float Vh400Helper::CalculateVwc(const uint16_t &value, const float &operating_voltage, const int &adc_bits)
 {
     const int adcRange = (1 << adc_bits) - 1;                // Calculate max value
     const float voltsPerUnit = operating_voltage / adcRange; // Calculate the amount of volt 1 unit is
