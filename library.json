@@ -29,6 +29,7 @@
         "atmelavr"
     ],
     "headers": [
-        "vh400.hpp"
+        "vh400.hpp",
+        "vh400_helper.hpp"
     ]
 }
