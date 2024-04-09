@@ -6,17 +6,13 @@
 class Vh400
 {
 private:
-    float voltsPerUnit;
-
     uint8_t adc_pin;
 
-    float CalculateVWC(float voltage);
-
 public:
-    Vh400(uint8_t adc_pin, float operating_voltage = 5.0, int adc_bits = 10);
+    Vh400(uint8_t adc_pin);
     ~Vh400();
 
-    float Measure();
+    uint16_t Measure();
 };
 
 #endif // VH400_HPP_
